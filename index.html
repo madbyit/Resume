@@ -5,39 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/stylesheet.css"/>
-    <script src="js/mad.js"></script>
+    <script src="js/main.js"></script>
     <title>Madilyn Bystedt CV</title>
 </head>
 <body>
-    <header>HEADER</header>
-    <div>
-        <p>Hello world!</p>
-        <button>Test1</button>
-        <button id="hello" >Test2</button>
-        <input type="button" onclick="hellojs()" value="test">
-    </div>
-    <div>
-        <img class="profilepic" src="assets/linkedinprofile.png" onclick="hellomad()"/>
-    </div>
-    <div class="card">
-        <img src="assets/linkedinprofile.png" alt="Avatar" style="width:25%">
-        <div class="container">
-          <h4><b>Madilyn</b></h4>
-          <p>Software Engineer</p>
-        </div>
-    </div>
-    <div class="flip-card">
+  <header></header>
+    <div style="margin: 20px;">
+      <div>
+          <p>RESUME!</p>
+      </div>
+      <div class="flip-card" onclick="hellomad()" style="margin: 15px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/linkedinprofile.png" alt="Madilyn" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Madilyn Bystedt</h1>
+              <h2>Software developer</h2>
+              <p>
+                I am a software developer with a B.Sc. in Mechatronics at Chalmers University of Technology.
+                I have experience in several areas and programming techniques, such as coding and testing with Python, Robotframework; System developing in .NET with C#/WPF/Xaml; Html/Css; and coding in C/C++.
+                I also have experience working with setup and administrate servers with tools such as Jenkins, Gerrit, Git, Jira and others.
+                OS: Linux and Windows
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="flip-card" style="margin: 15px;">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src="assets/linkedinprofile.png" alt="Madilyn" style="width:300px;height:300px;">
+            <div class="dotnet">.NET WPF C# XAML</div>
           </div>
           <div class="flip-card-back">
-            <h1>Madilyn Bystedt</h1>
-            <p>Software developer</p>
-            <p>We love this girl</p>
+            <h1>.NET Developer</h1>
+            <h2>Volvo Cars</h2>
+            <p>I was a system developer for Volvo Cars systems for software download and fault tracing of cars, VIDA, that is used at Volvo Cars aftermarket. My main task was maintenance and support of the graphical user interface and fault tracing. 
+            Developing in C# and XAML, in Visual Studio WPF. Using design pattern MVVM.
+            </p>
           </div>
         </div>
+      </div>
     </div>
-    <footer>FOOTER Copyright Madilyn Bystedt</footer>
+  <footer> Copyright Madilyn Bystedt</footer>
 </body>
 </html>
