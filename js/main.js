@@ -14,20 +14,27 @@ function getyear()
    return currentYear;
 }
 
-function popupunjo()
+function popupwindow(id)
 {
-   var popup = document.getElementById("unjopop");
-   popup.classList.toggle("show");
-}
+   if(id == unjo)
+   {
+      var popup = document.getElementById("unjopop");
+      console.log(id);
+      popup.classList.toggle("show");
+   }
 
-function popupdiadrom()
-{
-   var popup = document.getElementById("popdiadrom");
-   popup.classList.toggle("show");
-}
+   if(id == diadrom)
+   {
+      var popup = document.getElementById("popdiadrom");
+      console.log(id);
+      popup.classList.toggle("show");
+   }
 
-function popupesab()
-{
-   var popup = document.getElementById("esabpop");
-   popup.classList.toggle("show");
+   if(id == esab)
+   {
+      var popup = document.getElementById("esabpop");
+      console.log(id);
+      popup.classList.toggle("show");
+   }
+
 }
