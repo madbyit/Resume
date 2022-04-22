@@ -1,6 +1,15 @@
 
-/*===== HELLO STUFF =====*/
-function hellomad()
+/*===== ALERTS =====*/
+function alertwindow()
 {
-   alert("Hi!\nI am Madilyn!");
+   alert();
+}
+
+/*===== SITE =====*/
+
+function getyear()
+{
+   let currentYear = new Date().getFullYear();
+   console.log('Current year is', currentYear); // 👉️ 2022
+   return currentYear;
 }
