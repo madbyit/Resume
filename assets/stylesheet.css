@@ -6,15 +6,13 @@
 
 body{
     background-color: rgb(252, 243, 243);
-    
-}
-
-/* If screen less than 800px width change - Because: Fun*/
-@media only screen and (max-width: 800px)
-{
-    body {
-        background-color: purple;
-    }
+    padding: 0;
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    min-width: 1000px;
+    width: auto !important;  /* Firefox will set width as auto */
+    flex-direction: column;
 }
 
 a{
@@ -26,19 +24,21 @@ header{
     position: fixed;
     padding: 5px 0px 0px 0px;
     top: 0;
+    margin-left: 240px;
+    margin-bottom: 25px;
     width: 100%;
-    height: 20px;
-    background-color: grey;
+    height: 50px;
+    clear: both;
+    z-index: 9999; /* set this to something high*/
+    background: rgb(5, 68, 104);    
 }
 
-footer{
-    position: fixed;
-    padding: 5px 0px 5px 0px;
-    bottom: 0;
-    margin-left: 240px;
-    width: 100%;
-    height: 20px;
-    background: rgb(5, 68, 104);
+.resume-title{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 5rem;
+  border: 1px dashed rgb(5, 68, 104);
 }
 
 .wrapper .sidebar{
@@ -89,7 +89,27 @@ img{
   height: 200px;
   margin: auto;
   padding: 20px;
+}
 
+/*===== CARD =====*/
+
+.static-card{
+  background-color: steelblue;
+  color: black;
+  width: 600px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* 3D effect */
+  border-radius: 10px; /* 10px rounded corners */
+  box-shadow: 0 10px 12px 0 rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.static-front-text{
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
 }
 
 /*===== FLIP CARD =====*/
@@ -165,12 +185,47 @@ img{
     margin: 10px;
   }
 
-/*===== OTHER STYLES =====*/
 
-.resume-title{
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  font-size: 5rem;
-  border: 1px dashed rgb(158, 30, 255);
-}
+  /*===== FLIP CARD =====*/
+
+  /* Popup container */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    margin-left: -100%;
+    /* margin-top: -50%; */
+    background-color: rgb(216, 192, 255);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    clear: both;
+    z-index: 9999;
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 5;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 5;}
+  }
