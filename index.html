@@ -9,43 +9,72 @@
     <title>Madilyn Bystedt CV</title>
 </head>
 <body>
-  <header></header>
     <div style="margin: 20px;">
       <div>
-          <p>RESUME!</p>
+          <p class="resume-title">Madilyn Bystedt Resume</p>
       </div>
-      <div class="flip-card" onclick="hellomad()" style="margin: 15px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="assets/linkedinprofile.png" alt="Madilyn" style="width:300px;height:300px;">
+      <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+           <!--profile image & text-->
+           <div class="profile">
+            <img src="assets/linkedinprofile.png" alt="Madilyn" id="profile-img">
+              <h3>Madilyn Bystedt</h3>
+              <p>Software developer</p>
             </div>
-            <div class="flip-card-back">
-              <h1>Madilyn Bystedt</h1>
-              <h2>Software developer</h2>
-              <p>
-                I am a software developer with a B.Sc. in Mechatronics at Chalmers University of Technology.
-                I have experience in several areas and programming techniques, such as coding and testing with Python, Robotframework; System developing in .NET with C#/WPF/Xaml; Html/Css; and coding in C/C++.
-                I also have experience working with setup and administrate servers with tools such as Jenkins, Gerrit, Git, Jira and others.
-                OS: Linux and Windows
-              </p>
+            <!--menu item-->
+        </div>
+      </div>
+      <div style="float:left; margin-left: 250px;">
+        PROFILE
+        <div id="businesscard">
+          <div class="flip-card" style="margin: 15px;">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="flipcard-front-text">Business Card</div>
+              </div>
+              <div class="flip-card-back">
+                <div style="float:left; text-align: left; margin-top: 25px; margin-left: 25px;">
+                  <h1>Madilyn Bystedt</h1>
+                  <h2>Software developer</h2>
+                  <p>MAIL: <a href="mailto:madbyit@bystedts.com">madbyit@bystedts.com</a></p>
+                  <p>LINKEDIN: <a href="https://www.linkedin.com/in/madilynbystedt">LINK</a> </p>
+                </div>
+                <div style="float:right;">
+                  <img src="assets/linkedinprofile.png" alt="Madilyn" id="business-card-profile-img">
+                </div>
+              </div>
             </div>
           </div>
+        </div>
       </div>
-      <div class="flip-card" style="margin: 15px;">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <div class="dotnet">.NET WPF C# XAML</div>
-          </div>
-          <div class="flip-card-back">
-            <h1>.NET Developer</h1>
-            <h2>Volvo Cars</h2>
-            <p>I was a system developer for Volvo Cars systems for software download and fault tracing of cars, VIDA, that is used at Volvo Cars aftermarket. My main task was maintenance and support of the graphical user interface and fault tracing. 
-            Developing in C# and XAML, in Visual Studio WPF. Using design pattern MVVM.
-            </p>
+      <div style="float:right; padding-right: 200px;"> 
+        PORTFOLIO
+        <div id="diadrom"></div>
+          <div class="flip-card" style="margin: 15px;">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="flipcard-front-text">Diadrom<br>2015-02 to 2017-12</div>
+              </div>
+              <div class="flip-card-back">
+                <h1>.NET Developer</h1>
+                <div class="flipcard-where-when-text">
+                  <h2>2015-07 to 2015-12</h2>
+                  <h2>@Volvo Cars</h2>
+                </div>
+                <div class="flipcard-back-text">
+                  I was a system developer for Volvo Cars systems for software download and fault tracing of cars, VIDA, that is used at Volvo Cars aftermarket. 
+                  My main task was maintenance and support of the graphical user interface and fault tracing.
+                  Developing in C# and XAML, in Visual Studio WPF. Using design pattern MVVM.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <footer> Copyright Madilyn Bystedt</footer>
+  <footer>
+    <div style="margin-left: 50px;">&copy;<script>document.write(getyear());</script> Madilyn Bystedt</div>
+  </footer>
 </body>
 </html>

@@ -1,8 +1,12 @@
+/*===== IMPORTS =====*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 /*===== BASE =====*/
 
 body{
     background-color: rgb(252, 243, 243);
+    
 }
 
 /* If screen less than 800px width change - Because: Fun*/
@@ -13,24 +17,65 @@ body{
     }
 }
 
+a{
+  color: black;
+}
+
+/*===== HEADER FOOTER SIDEBAR =====*/
 header{
+    position: fixed;
     padding: 5px 0px 0px 0px;
     top: 0;
     width: 100%;
-    /* Height of the header*/ 
     height: 20px;
     background-color: grey;
 }
 
 footer{
     position: fixed;
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     bottom: 0;
+    margin-left: 240px;
     width: 100%;
-    /* Height of the footer*/ 
     height: 20px;
-    background-color: grey;
+    background: rgb(5, 68, 104);
 }
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+    font-size: 24px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 18px;
+}
+
 
 
 /*===== PICS/IMAGES =====*/
@@ -39,15 +84,24 @@ img{
   border-radius: 5px 5px 0 0;
 }
 
-/*===== CARD =====*/
-  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+#business-card-profile-img{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+/*===== FLIP CARD =====*/
+
+  /* The flip card container */
 .flip-card {
     background-color: transparent;
     width: 600px;
     height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    border-radius: 5px; /* 5px rounded corners */
+    perspective: 1000px; /* 3D effect */
+    border-radius: 10px; /* 10px rounded corners */
   }
   
   /* This container is needed to position the front and back side */
@@ -72,7 +126,7 @@ img{
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    border-radius: 10px; /* 5px rounded corners */
+    border-radius: 10px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 10px 12px 0 rgba(0,0,0,0.5);
   }
@@ -87,11 +141,36 @@ img{
   /* Style the back side */
   .flip-card-back {
     background-color: rgb(158, 30, 255);
-    color: white;
+    color: black;
     transform: rotateY(180deg);
-  }@import url(https://fonts.googleapis.com/css?family=Lato);
-
-  .dotnet{
-    font-size: 5rem;
-    text-align: center;
+    height: auto;
   }
+
+  .flipcard-front-text{
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .flipcard-where-when-text{
+    font-size: 16px;
+    border: 1px dashed black;
+  }
+
+  .flipcard-back-text{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 10px;
+  }
+
+/*===== OTHER STYLES =====*/
+
+.resume-title{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 5rem;
+  border: 1px dashed rgb(158, 30, 255);
+}
