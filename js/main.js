@@ -1,40 +1,33 @@
-
-/*===== ALERTS =====*/
-function alertwindow()
-{
-   alert();
-}
-
-/*===== SITE =====*/
+/*===== SIDEBAR HEADER FOOTER =====*/
 
 function getyear()
 {
    let currentYear = new Date().getFullYear();
-   console.log('Current year is', currentYear); // 👉️ 2022
    return currentYear;
 }
 
+/*===== POPUP WINDOW =====*/
+
 function popupwindow(id)
 {
-   if(id == unjo)
-   {
-      var popup = document.getElementById("unjopop");
-      console.log(id);
-      popup.classList.toggle("show");
-   }
+   let popup = "";
 
-   if(id == diadrom)
+   switch(id)
    {
-      var popup = document.getElementById("popdiadrom");
-      console.log(id);
-      popup.classList.toggle("show");
+      case unjo:
+            popup = document.getElementById("unjopop");
+            popup.classList.toggle("show");
+         break;
+      case diadrom:
+            popup = document.getElementById("popdiadrom");
+            popup.classList.toggle("show");
+         break;
+      case esab:
+            popup = document.getElementById("esabpop");
+            popup.classList.toggle("show");
+         break;
+         default:
+            console.log(id);
+            break;
    }
-
-   if(id == esab)
-   {
-      var popup = document.getElementById("esabpop");
-      console.log(id);
-      popup.classList.toggle("show");
-   }
-
 }
