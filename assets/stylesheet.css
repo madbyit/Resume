@@ -9,8 +9,8 @@ body{
     padding: 0;
     height: 100%;
     display: flex;
-    min-height: 100vh;
-    min-width: 1000px;
+    min-height: 1000px;
+    min-width: 1150px;
     width: auto !important;  /* Firefox will set width as auto */
     flex-direction: column;
 }
@@ -77,7 +77,6 @@ header{
 }
 
 
-
 /*===== PICS/IMAGES =====*/
 
 img{
@@ -100,7 +99,7 @@ img{
   height: 200px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* 3D effect */
-  border-radius: 10px; /* 10px rounded corners */
+  border-radius: 10px;
   box-shadow: 0 10px 12px 0 rgba(0,0,0,0.5);
   position: relative;
   z-index: 9999; 
@@ -202,7 +201,7 @@ img{
     text-align: center;
   }
 
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  /* Toggle popup hide/show this class when clicking on the popup container */
   .popup-container .show {
     display: inline-block;
     -webkit-animation: fadeIn 1s;
