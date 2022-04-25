@@ -48,27 +48,27 @@ header{
 }
 
 .wrapper .sidebar .profile{
-    margin-bottom: 30px;
-    text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .wrapper .sidebar .profile img{
-    display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 75%;
-    margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 75%;
+  margin: 0 auto;
 }
 
 .wrapper .sidebar .profile h3{
-    color: #ffffff;
-    margin: 10px 0 5px;
-    font-size: 24px;
+  color: #ffffff;
+  margin: 10px 0 5px;
+  font-size: 24px;
 }
 
 .wrapper .sidebar .profile p{
-    color: rgb(206, 240, 253);
-    font-size: 18px;
+  color: rgb(206, 240, 253);
+  font-size: 18px;
 }
 
 .wrapper .sidebar .footer{
@@ -138,108 +138,115 @@ img{
 
   /* The flip card container */
 .flip-card {
-    background-color: transparent;
-    width: 600px;
-    height: 300px;
-    margin: 15px;
-    perspective: 1000px; /* 3D effect */
-    border-radius: 10px; /* 10px rounded corners */
-  }
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  margin: 15px;
+  perspective: 1000px; /* 3D effect */
+  border-radius: 10px; /* 10px rounded corners */
+}
   
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
   
   /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-    border-radius: 10px;
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.5);
-  }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 10px 12px 0 rgba(0,0,0,0.5);
+}
   
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: steelblue;
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: steelblue;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
   
-  /* Style the back side */
-  .flip-card-back {
-    background-color: rgb(158, 30, 255);
-    color: black;
-    transform: rotateY(180deg);
-    height: auto;
-  }
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(158, 30, 255);
+  color: black;
+  transform: rotateY(180deg);
+  height: auto;
+}
 
-  .flipcard-front-text{
-    font-size: 2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    padding: 30px;
-  }
+.flip-card-back .business-left{
+  float: left; 
+  text-align: left;
+  margin-top: 10px; 
+  margin-left: 25px;
+}
 
-  .flipcard-back-text{
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-  }
+.flipcard-front-text{
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+.flipcard-back-text{
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
 
 
-  /*===== POPUP =====*/
+/*===== POPUP =====*/
 
-  /* The popup */
-  .popup-container .popuptext {
-    display: none;
-    background-color: rgb(95, 42, 179);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 200%;
-    margin-left: -105%;
-    border-radius: 10px;
-    padding:10px;
-    /* text */
-    justify-content: center;
-    overflow: auto; /* Enable scroll */
-    color: black;
-    text-align: center;
-  }
+/* The popup */
+.popup-container .popuptext {
+  display: none;
+  background-color: rgb(95, 42, 179);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200%;
+  margin-left: -105%;
+  border-radius: 10px;
+  padding:10px;
+  /* text */
+  justify-content: center;
+  overflow: auto; /* Enable scroll */
+  color: black;
+  text-align: center;
+}
 
-  /* Toggle popup hide/show this class when clicking on the popup container */
-  .popup-container .show {
-    display: inline-block;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    top: -50%;
-    clear: both;
-    z-index: 1;
-  }
+/* Toggle popup hide/show this class when clicking on the popup container */
+.popup-container .show {
+  display: inline-block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  top: -50%;
+  clear: both;
+  z-index: 1;
+}
 
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 5;}
-  }
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 5;}
+}
 
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 5;}
-  }
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 5;}
+}
