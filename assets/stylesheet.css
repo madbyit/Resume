@@ -5,14 +5,14 @@
 /*===== BASE =====*/
 
 body{
-    background-color: rgb(228, 227, 248);
-    padding: 0;
-    height: 100%;
-    display: flex;
-    min-height: 1000px;
-    min-width: 1150px;
-    width: auto !important;  /* Firefox will set width as auto */
-    flex-direction: column;
+  background-color: rgb(228, 227, 248);
+  padding: 0;
+  height: 100%;
+  display: flex;
+  min-height: 1000px;
+  min-width: 1150px;
+  width: auto !important;  /* Firefox will set width as auto */
+  flex-direction: column;
 }
 
 a{
@@ -21,16 +21,16 @@ a{
 
 /*===== HEADER FOOTER SIDEBAR =====*/
 header{
-    position: fixed;
-    padding: 5px 0px 0px 0px;
-    top: 0;
-    margin-left: 240px;
-    margin-bottom: 25px;
-    width: 100%;
-    height: 50px;
-    clear: both;
-    z-index: 1;
-    background: rgb(5, 68, 104);    
+  position: fixed;
+  padding: 5px 0px 0px 0px;
+  top: 0;
+  margin-left: 240px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 50px;
+  clear: both;
+  z-index: 1;
+  background: rgb(5, 68, 104);    
 }
 
 .resume-title{
@@ -42,14 +42,14 @@ header{
 }
 
 .wrapper .sidebar{
-    background: rgb(5, 68, 104);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
 }
 
 .wrapper .sidebar .profile{
@@ -76,6 +76,12 @@ header{
     font-size: 18px;
 }
 
+.wrapper .sidebar .footer{
+  margin-left: 20px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 10px;
+}
 
 /*===== PICS/IMAGES =====*/
 
