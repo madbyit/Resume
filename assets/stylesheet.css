@@ -78,6 +78,10 @@ header{
   bottom: 10px;
 }
 
+.wrapper .sidebar .footer p{
+  display: inline-block;
+}
+
 /*===== COLUMNS =====*/
 
 .column-left{

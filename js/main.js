@@ -1,9 +1,8 @@
 /*===== SIDEBAR HEADER FOOTER =====*/
 
-function getyear()
+function getcurrentyear()
 {
-   let currentYear = new Date().getFullYear();
-   return currentYear;
+   document.getElementById("year").innerHTML = new Date().getFullYear();
 }
 
 /*===== POPUP WINDOW =====*/

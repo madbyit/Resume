@@ -8,7 +8,7 @@
       <script src="js/main.js"></script>
       <title>MadBy CV</title>
   </head>
-  <body>
+  <body onload="getcurrentyear();">
     <header>My Resume</header>
     <div style="margin: 20px;">
 
@@ -22,8 +22,9 @@
             </div>
             <div>
               <div class="footer">
-                &copy;<script>document.write(getyear());</script>
-                Madilyn Bystedt
+                <p>&copy;</p>
+                <p id="year"></p> 
+                <p>Madilyn Bystedt</p>
               </div>
             </div>
         </div>
