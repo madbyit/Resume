@@ -5,7 +5,7 @@
 /*===== BASE =====*/
 
 body{
-    background-color: rgb(252, 243, 243);
+    background-color: rgb(228, 227, 248);
     padding: 0;
     height: 100%;
     display: flex;
@@ -171,18 +171,13 @@ img{
     font-size: 2rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    padding: 50px;
-  }
-
-  .flipcard-where-when-text{
-    font-size: 16px;
-    border: 1px dashed black;
+    padding: 30px;
   }
 
   .flipcard-back-text{
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 20px;
     margin: 10px;
   }
 
