@@ -22,7 +22,7 @@ a{
 /*===== HEADER FOOTER SIDEBAR =====*/
 header{
   position: fixed;
-  padding: 5px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
   top: 0;
   margin-left: 240px;
   margin-bottom: 50px;
@@ -156,7 +156,7 @@ img{
   transform-style: preserve-3d;
 }
   
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Does a horizontal flip when moving the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -213,6 +213,7 @@ img{
 /*===== POPUP =====*/
 
 /* The popup */
+
 .popup-container .popuptext {
   display: none;
   background-color: rgb(95, 42, 179);
