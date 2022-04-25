@@ -191,8 +191,7 @@ img{
 
   /* The popup */
   .popup-container .popuptext {
-    visibility: hidden;
-    display: inline-block;
+    display: none;
     background-color: rgb(95, 42, 179);
     position: fixed;
     justify-content: center;
@@ -205,6 +204,7 @@ img{
     padding:10px;
     clear: both;
     z-index: 500;
+    /* text */
     overflow: auto; /* Enable scroll */
     color: black;
     text-align: center;
@@ -212,7 +212,7 @@ img{
 
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
   .popup-container .show {
-    visibility: visible;
+    display: inline-block;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
