@@ -25,6 +25,10 @@ function popupwindow(id)
             popup = document.getElementById("esabpop");
             popup.classList.toggle("show");
          break;
+      case chalmers:
+            popup = document.getElementById("chalmerspop");
+            popup.classList.toggle("show");
+         break;
          default:
             console.log(id);
             break;

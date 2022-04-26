@@ -217,6 +217,11 @@ img{
   margin: 10px;
 }
 
+.flipcard-back-text p{
+  font-size: 18px;
+  text-align: left;
+}
+
 
 /*===== POPUP =====*/
 
@@ -228,7 +233,8 @@ img{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 200%;
+  height: auto;
+  max-height: 150%;
   margin-left: -105%;
   border-radius: 10px;
   padding:10px;
@@ -244,7 +250,7 @@ img{
   display: inline-block;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
-  top: -50%;
+  top: -5%;
   clear: both;
   z-index: 1;
 }
