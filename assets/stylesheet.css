@@ -30,14 +30,14 @@ header{
   height: 100px;
   clear: both;
   z-index: 1;
-  background: rgb(5, 68, 104);
+  background: #000;
   font-size: 4rem;
   text-indent: 70px;
   color: #f1f1f1;
 }
 
 .wrapper .sidebar{
-  background: rgb(5, 68, 104);
+  background: #000;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,6 +80,7 @@ header{
 
 .wrapper .sidebar .footer p{
   display: inline-block;
+  color: #ffffff;
 }
 
 /*===== COLUMNS =====*/
@@ -116,7 +117,7 @@ img{
 /*===== CARD =====*/
 
 .static-card{
-  background-color: steelblue;
+  background-color: rgb(51, 51, 51);
   color: black;
   width: 600px;
   height: 200px;
@@ -132,11 +133,12 @@ img{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   padding: 50px;
+  color: #ffffff;
 }
 
 .static-front-text:hover,
 .static-front-text:focus{
-  color: black;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   font-weight: bolder;
@@ -183,14 +185,14 @@ img{
   
 /* Style the front side (fallback if image is missing) */
 .flip-card-front{
-  background-color: steelblue;
-  color: black;
+  background-color: rgb(51, 51, 51);
+  color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
   
 /* Style the back side */
 .flip-card-back{
-  background-color: rgb(158, 30, 255);
+  background-color: rgb(242, 237, 245);
   color: black;
   transform: rotateY(180deg);
   height: auto;
@@ -229,7 +231,7 @@ img{
 
 .popup-container .popuptext{
   display: none;
-  background-color: rgb(95, 42, 179);
+  background-color: rgb(242, 237, 245);
   position: absolute;
   top: 0;
   width: 100%;
